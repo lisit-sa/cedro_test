@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+@@include('components/_head.html',{
+"lang":"ru",
+"title":"test project",
+"description":"cedro cosmetics",
+})
+
+<body>
+	@@include('components/_header.html')
+	
+
+	<main class="main">
+		<section class="main_section container flexbox">
+		<aside> 
+			<nav class="aside__nav">
+			  <ul>
+				<li>
+					<a href="/" class="aside__nav__item aside__nav__item_active">Профиль</a>
+				</li>
+				<li>
+					<a href="/" class="aside__nav__item">Мои заказы</a>
+				</li>
+				<li>
+					<a href="/" class="aside__nav__item">Выход</a>
+				</li>
+			  </ul>
+			</nav>
+		</aside>
+		
+		<div class="form__section">
+			<h1>Профиль</h1>
+			<div class="form__section__wrapper">
+				<p class="form__header">Данные профиля</p>
+				<form class="form__profile" action="" method="post">
+					<div class="form__profile__wrapper">
+						<label for="name">ФИО</label>
+						<input type="text" placeholder="Имя" name="name" required>
+		
+						<label for="email">Почта</label>
+						<input type="email" placeholder="Почта" name="email" required>
+		
+						<label for="phone">Телефон</label>
+						<input type="tel" placeholder="+7(000) 000-00-00" name="phone" required>
+					</div>
+					
+					<button class="button button__submit" type="submit">Сохранить изменения</button>
+				</form>
+			</div>
+			
+		</div>
+		</section>
+		<section class="catalog">
+			<div class="catalog__wrapper">
+				<div class="catalog__header flexbox">
+					<h2><span>Тренды</span> сезона</h2>
+					<p class="catalog__link">Перейти в каталог
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="0.75" y="0.75" width="14.5" height="14.5" rx="7.25" stroke="#21242E" stroke-width="1.5"/>
+							<path d="M7.24475 11L10.2448 8L7.24475 5" stroke="#21242E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>					
+					</p>
+				</div>
+				<div class="swiper">
+					<ul class="swiper-wrapper">
+							<li class="swiper-slide catalog__item">
+								<div class="catalog__item_top">
+									<img src="./img/image 24.png" />
+									<div class="catalog__item_top_sale"><span>Sale</span></div>
+									<span class="catalog__item_top_favorite">
+										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+										</svg>
+									</span>
+								</div>
+								<div class="catalog__item_bottom">
+									<p class="catalog__item_header">Brown to Blonde</p>
+									<span class="catalog__item_description">Пигмент для бровей</span>
+									<span class="catalog__item_quantity">12 ml.</span>
+									<div class="catalog__item__price">
+										<span class="catalog__item__price_new">1 500 <span class="rub">P</span></span>
+										<span class="catalog__item__price_old">3 000 <span class="rub">P</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide catalog__item">
+								<div class="catalog__item_top">
+									<img src="./img/image 24.png" />
+									<span class="catalog__item_top_sale">Акция! 1+1=3</span>
+									<span class="catalog__item_top_favorite">
+										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+										</svg>
+									</span>
+								</div>
+								<div class="catalog__item_bottom">
+									<p class="catalog__item_header">Brown to Blonde</p>
+									<span class="catalog__item_description">Пигмент для бровей</span>
+									<span class="catalog__item_quantity">12 ml.</span>
+									<div class="catalog__item__price">
+										<p class="catalog__item__price_new">1 500 <span class="rub">P</span></p>
+										<p class="catalog__item__price_old">3 000 <span class="rub">P</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide catalog__item">
+								<div class="catalog__item_top">
+									<img src="./img/image 24.png" />
+									<span class="catalog__item_top_sale">Sale</span>
+									<span class="catalog__item_top_favorite">
+										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+										</svg>
+									</span>
+								</div>
+								<div class="catalog__item_bottom">
+									<p class="catalog__item_header">Brown to Blonde</p>
+									<span class="catalog__item_description">Пигмент для бровей</span>
+									<span class="catalog__item_quantity">12 ml.</span>
+									<div class="catalog__item__price">
+										<p class="catalog__item__price_new">1 500 <span class="rub">P</span></p>
+										<p class="catalog__item__price_old">3 000 <span class="rub">P</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide catalog__item">
+								<div class="catalog__item_top">
+									<img src="./img/image 24.png" />
+									<span class="catalog__item_top_sale">Бесплатная доставка</span>
+									<span class="catalog__item_top_favorite">
+										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+										</svg>
+									</span>
+								</div>
+								<div class="catalog__item_bottom">
+									<p class="catalog__item_header">Brown to Blonde</p>
+									<span class="catalog__item_description">Пигмент для бровей</span>
+									<span class="catalog__item_quantity">12 ml.</span>
+									<div class="catalog__item__price">
+										<p class="catalog__item__price_new">1 500 <span class="rub">P</span></p>
+										<p class="catalog__item__price_old">3 000 <span class="rub">P</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide catalog__item">
+								<div class="catalog__item_top">
+									<img src="./img/image 24.png" />
+									<span class="catalog__item_top_sale">Sale</span>
+									<span class="catalog__item_top_favorite">
+										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+										</svg>
+									</span>
+								</div>
+								<div class="catalog__item_bottom">
+									<p class="catalog__item_header">Brown to Blonde</p>
+									<span class="catalog__item_description">Пигмент для бровей</span>
+									<span class="catalog__item_quantity">12 ml.</span>
+									<div class="catalog__item__price">
+										<p class="catalog__item__price_new">1 500 <span class="rub">P</span></p>
+										<p class="catalog__item__price_old">3 000 <span class="rub">P</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide catalog__item">
+								<div class="catalog__item_top">
+									<img src="./img/image 24.png" />
+									<span class="catalog__item_top_sale">Sale</span>
+									<span class="catalog__item_top_favorite">
+										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+										</svg>
+									</span>
+								</div>
+								<div class="catalog__item_bottom">
+									<p class="catalog__item_header">Brown to Blonde</p>
+									<span class="catalog__item_description">Пигмент для бровей</span>
+									<span class="catalog__item_quantity">12 ml.</span>
+									<div class="catalog__item__price">
+										<p class="catalog__item__price_new">1 500 <span class="rub">P</span></p>
+										<p class="catalog__item__price_old">3 000 <span class="rub">P</span></p>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide catalog__item">
+								<div class="catalog__item_top">
+									<img src="./img/image 24.png" />
+									<span class="catalog__item_top_sale">Sale</span>
+									<span class="catalog__item_top_favorite">
+										<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.8398 0C14.093 0 12.5616 0.778928 11.4113 2.25262C11.2579 2.44917 11.1212 2.64579 11 2.83623C10.8788 2.64575 10.7421 2.44917 10.5887 2.25262C9.43837 0.778928 7.90701 0 6.16016 0C2.8602 0 0.5 2.7631 0.5 6.07868C0.5 9.86988 3.60722 13.4429 10.575 17.664C10.7056 17.7431 10.8528 17.7827 11 17.7827C11.1472 17.7827 11.2944 17.7431 11.425 17.664C18.3928 13.443 21.5 9.86992 21.5 6.07872C21.5 2.76486 19.1417 0 15.8398 0Z" fill="#E4E4E4"/>
+										</svg>
+									</span>
+								</div>
+								<div class="catalog__item_bottom">
+									<p class="catalog__item_header">Brown to Blonde</p>
+									<span class="catalog__item_description">Пигмент для бровей</span>
+									<span class="catalog__item_quantity">12 ml.</span>
+									<div class="catalog__item__price">
+										<p class="catalog__item__price_new">1 500 <span class="rub">P</span></p>
+										<p class="catalog__item__price_old">3 000 <span class="rub">P</span></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>
+			
+		</section>
+	</main>
+	@@include('components/_footer.html')
+</body>
+
+</html>
